@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Login</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<div class="login-container">
+  <h1>Cadastro de Login</h1>
+  <form id="loginForm">
+    <label for="user">Usuário:</label>
+    <input type="text" id="user" required>
+
+    <label for="passowrd">Senha:</label>
+    <input type="password" id="passowrd" required>
+
+    <button type="button" onclick="salvarLogin()">Salvar Login</button>
+  </form>
+  <p id="mensagem"></p>
+</div>
+  <script src="/js/login.js"></script>
+</body>
+</html>

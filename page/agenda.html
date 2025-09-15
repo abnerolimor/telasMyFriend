@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Agenda</title>
+  <link rel="stylesheet" href="/css/agenda.css">
+</head>
+<body>
+<div class="agenda-container">
+  <h1>Cadastro de Agenda</h1>
+  <form id="agendaForm">
+    <label for="data">Data:</label>
+    <input type="date" id="data" required>
+
+    <label for="horainicio">Hora Início:</label>
+    <input type="time" id="horainicio" required>
+
+    <label for="horafim">Hora Fim:</label>
+    <input type="time" id="horafim" required>
+
+    <label for="disponivel">
+      <input type="checkbox" id="disponivel" checked>
+      Disponível
+    </label>
+
+    <button type="button" onclick="salvarAgenda()">Salvar Agenda</button>
+  </form>
+  <p id="mensagem"></p>
+</div>
+ <script src="/js/agenda.js"></script>
+</body>
+</html>

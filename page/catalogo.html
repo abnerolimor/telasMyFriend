@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Catálogo</title>
+  <link rel="stylesheet" href="/css/catalogo.css">
+</head>
+<body>
+<div class="catalogo-container">
+  <h1>Cadastro de Catálogo</h1>
+  <form id="catalogoForm">
+    <label for="item">Item:</label>
+    <input type="text" id="item" required>
+
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" rows="4" placeholder="Digite a descrição..." required></textarea>
+
+    <button type="button" onclick="salvarCatalogo()">Salvar Catálogo</button>
+  </form>
+  <p id="mensagem"></p>
+</div>
+ <script src="/js/catalogo.js"></script>
+</body>
+</html>

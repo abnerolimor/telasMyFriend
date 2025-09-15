@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Pet</title>
+  <link rel="stylesheet" href="/css/pet.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Pet</h1>
+    <form id="petForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+
+      <label for="idade">Idade:</label>
+      <input type="text" id="idade" required>
+
+      <label for="raca">Raça:</label>
+      <input type="text" id="raca" required>
+
+      <label for="porte">Porte:</label>
+      <select id="porte" required>
+        <option value="">Selecione</option>
+        <option value="Pequeno">Pequeno</option>
+        <option value="Médio">Médio</option>
+        <option value="Grande">Grande</option>
+      </select>
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" required>
+        <option value="">Selecione</option>
+        <option value="Macho">Macho</option>
+        <option value="Fêmea">Fêmea</option>
+      </select>
+
+      <label for="responsavel">Responsável:</label>
+      <input type="text" id="responsavel" required>
+
+      <label for="cor">Cor:</label>
+      <input type="text" id="cor" required>
+
+      <button type="button" onclick="salvarPet()">Salvar Pet</button>
+    </form>
+    <p id="mensagem"></p>
+  </div>
+
+  <script src="/js/pet.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Venda</title>
+  <link rel="stylesheet" href="../css/venda.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastrar Venda</h1>
+    <form id="formVenda" onsubmit="event.preventDefault(); salvarVenda();">
+      <label for="loja">Loja:</label>
+      <input type="text" id="loja" name="loja" required>
+
+      <label for="valorTotal">Valor Total:</label>
+      <input type="text" id="valorTotal" name="valorTotal" required>
+
+      <label for="valorItem">Valor do Item:</label>
+      <input type="text" id="valorItem" name="valorItem" required>
+
+      <label for="dataCompra">Data da Compra:</label>
+      <input type="date" id="dataCompra" name="dataCompra" required>
+
+      <label for="formaPagamento">Forma de Pagamento:</label>
+      <input type="text" id="formaPagamento" name="formaPagamento" required>
+
+      <label for="status">Status:</label>
+      <input type="text" id="status" name="status" required>
+
+      <button type="submit">Salvar Venda</button>
+    </form>
+  </div>
+
+  <script src="../js/venda.js"></script>
+</body>
+</html>

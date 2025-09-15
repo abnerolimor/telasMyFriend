@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Perfil</title>
+  <link rel="stylesheet" href="/css/perfil.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Perfil</h1>
+    <form id="perfilForm">
+      <label for="fotoUrl">URL da Foto:</label>
+      <input type="url" id="fotoUrl" placeholder="https://..." required>
+
+      <button type="button" onclick="salvarPerfil()">Salvar Perfil</button>
+    </form>
+    <p id="mensagem"></p>
+  </div>
+
+  <script src="/js/perfil.js"></script>
+</body>
+</html>
