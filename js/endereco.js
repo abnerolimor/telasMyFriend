@@ -15,7 +15,7 @@ function salvarEndereco() {
   headers.append("Content-Type", "application/json");
   headers.append("Access-Control-Allow-Origin", "*");
 
-  fetch("http://127.0.0.1:8080/endereco/insert", {
+  fetch("http://127.0.0.1:8080/endereco/cadendereco", {
     method: "POST",
     mode: "cors",
     cache: "no-cache",

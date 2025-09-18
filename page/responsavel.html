@@ -22,8 +22,19 @@
       <label for="cpf">CPF:</label>
       <input type="text" id="cpf" required>
 
-      <!-- Você pode adicionar campos de Endereço e Login se desejar -->
+      <!-- Campo para chave estrangeira: Endereço -->
+      <label for="endereco">Endereço:</label>
+      <select id="endereco" required>
+        <option value="">Selecione um endereço</option>
+      </select>
       
+      <!-- Campos de Login -->
+      <label for="usuario">Usuário:</label>
+      <input type="text" id="usuario" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" required>
+
       <button type="button" onclick="salvarResponsavel()">Salvar Responsável</button>
     </form>
     <p id="mensagem"></p>

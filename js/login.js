@@ -12,7 +12,7 @@ function salvarLogin() {
   headers.append("Content-Type", "application/json");
   headers.append("Access-Control-Allow-Origin", "*");
 
-  fetch("http://127.0.0.1:8080/login/insert", {
+  fetch("http://127.0.0.1:8080/login/cadlogin", {
     method: "POST",
     mode: "cors",
     cache: "no-cache",

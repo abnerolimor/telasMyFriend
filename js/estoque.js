@@ -26,6 +26,9 @@ function salvarEstoque() {
   .then(data => {
     const estoque_id = data.id;
     console.log("Id do Estoque salvo: ", estoque_id);
+
+    window.location.href = 'sucesso.html'
+
     localStorage.setItem('id_estoque', estoque_id);
 
     document.getElementById("mensagem").textContent = "Estoque cadastrado com sucesso!";

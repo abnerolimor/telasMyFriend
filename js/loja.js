@@ -29,6 +29,9 @@ function salvarLoja() {
   .then(data => {
     const loja_id = data.id;
     console.log("Id da Loja salva: ", loja_id);
+
+    window.location.href = 'sucesso.html'
+
     localStorage.setItem('id_loja', loja_id);
 
     document.getElementById("mensagem").textContent = "Loja cadastrada com sucesso!";
