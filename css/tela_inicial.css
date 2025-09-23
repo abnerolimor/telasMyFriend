@@ -1,0 +1,151 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    min-height: 0;
+}
+
+/* Layout da página para o footer ir ao fim */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* empurra o footer para baixo */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0097a7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+}
+.logo span:first-child { color: red; }
+.logo span:last-child { color: black; }
+
+/* Navegação */
+nav {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover { color: red; transform: scale(1.1); }
+
+nav svg {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+}
+
+/* Busca */
+.search-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container input {
+    width: 350px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 2px solid #555;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-container button {
+    margin-left: -40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img {
+    width: 160px;
+    height: 220px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+/* Hover no carrossel (imagens) */
+.card img:hover {
+    transform: scale(1.15);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Nome do produto */
+.card p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    margin-top: auto; /* fixa no fim */
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 100px;
+    background: #d95f00;
+    border-top-left-radius: 100% 50px;
+    transform: rotate(0deg);
+}
+
+.wave2 {
+    background: #00c8d7;
+    bottom: -20px;
+    left: 100px;
+    border-top-right-radius: 100% 50px;
+}
+
+.paws {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    font-size: 40px;
+}
