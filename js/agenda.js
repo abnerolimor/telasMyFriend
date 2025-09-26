@@ -18,7 +18,12 @@ function salvarAgenda() {
     method: "POST",
     mode: "cors",
     cache: "no-cache",
-    body: JSON.stringify({ data, Horainicio: horainicio, Horafim: horafim, Disponivel: disponivel }),
+    body: JSON.stringify(
+      { data,
+        Horainicio: horainicio,
+        Horafim: horafim, 
+        Disponivel: disponivel }
+    ),
     headers: headers
   })
   .then(response => {

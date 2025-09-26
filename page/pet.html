@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastrar Pet</title>
-  <link rel="stylesheet" href="/css/pet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro de Pets</title>
+  <link rel="stylesheet" href="../css/pet.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Cadastro de Pet</h1>
-    <form id="petForm">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" required>
 
-      <label for="idade">Idade:</label>
-      <input type="text" id="idade" required>
+  <h1>Cadastro de Pets</h1>
 
-      <label for="raca">Raça:</label>
-      <input type="text" id="raca" required>
-
-      <label for="porte">Porte:</label>
-      <select id="porte" required>
-        <option value="">Selecione</option>
-        <option value="Pequeno">Pequeno</option>
-        <option value="Médio">Médio</option>
-        <option value="Grande">Grande</option>
-      </select>
-
-      <label for="sexo">Sexo:</label>
-      <select id="sexo" required>
+  <form id="form-pet">
+    <div>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required />
+    </div>
+    <div>
+      <label for="idade">Idade</label>
+      <input type="text" id="idade" name="idade" required />
+    </div>
+    <div>
+      <label for="raca">Raça</label>
+      <input type="text" id="raca" name="raca" required />
+    </div>
+    <div>
+      <label for="sexo">Sexo</label>
+      <select id="sexo" name="sexo" required>
         <option value="">Selecione</option>
         <option value="Macho">Macho</option>
         <option value="Fêmea">Fêmea</option>
       </select>
+    </div>
+    <div>
+      <label for="imagem">URL da Imagem do Pet</label>
+      <input type="url" id="imagem" name="imagem" placeholder="https://exemplo.com/imagem.jpg" />
+    </div>    
+    <div>
+      <label for="responsavel">Responsável</label>
+      <input type="text" id="responsavel" name="responsavel" required />
+    </div>
+    <button type="submit"onclick="salvarPet()">Cadastrar Pet</button>
+  </form>
 
+<<<<<<< HEAD
+  <section id="lista-pets">
+    <h2>Pets Cadastrados</h2>
+    <div id="pets-container"></div>
+  </section>
+=======
       <label for="responsavel">Responsável:</label>
-      <input type="text" id="responsavel" required>
+      <select id="responsavel" required>
+        <option value="">Selecione um responsável</option>
+      </select>
+>>>>>>> bed63b96279a33de6f6db5c1e75a785afc974870
 
-      <label for="cor">Cor:</label>
-      <input type="text" id="cor" required>
-
-      <button type="button" onclick="salvarPet()">Salvar Pet</button>
-    </form>
-    <p id="mensagem"></p>
-  </div>
-
-  <script src="/js/pet.js"></script>
+  <script src="../js/pet.js"></script>
 </body>
 </html>
