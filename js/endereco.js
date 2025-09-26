@@ -19,7 +19,8 @@ function salvarEndereco() {
     method: "POST",
     mode: "cors",
     cache: "no-cache",
-    body: JSON.stringify({ rua, numero, bairro, cep, complemento }),
+    body: JSON.stringify(
+      { rua, numero, bairro, cep, complemento }),
     headers: headers
   })
   .then(response => {
